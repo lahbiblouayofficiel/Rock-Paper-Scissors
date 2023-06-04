@@ -1,6 +1,6 @@
 // Get computer choice randomly
 function getComputerChoice() {
-    const choices = ["Rock", "Paper", "Scissors"];
+    const choices = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * choices.length);
     
     return choices[randomIndex];
@@ -11,13 +11,15 @@ function getComputerChoice() {
     if (playerSelection === computerSelection) {
       return "Draw";
     } else if (
-      (playerSelection === "Rock" && computerSelection === "Scissors") ||
-      (playerSelection === "Paper" && computerSelection === "Rock") ||
-      (playerSelection === "Scissors" && computerSelection === "Paper")
+      (playerSelection === "rock" && computerSelection === "scissors") ||
+      (playerSelection === "paper" && computerSelection === "rock") ||
+      (playerSelection === "scissors" && computerSelection === "paper")
     ) {
-      return "You win!";
+        return "You win!";
+      
     } else {
-      return "You lose!";
+        
+        return "You lose!";
     }
   }
   
@@ -31,7 +33,7 @@ function getComputerChoice() {
 //  play the game 5 time 
 
     while (roundsPlayed < 5) {
-      let playerSelection = prompt("Enter your choice: Rock, Paper, or Scissors");
+      let playerSelection = prompt("Enter your choice: rock, paper, or scissors");
       playerSelection = playerSelection.toLowerCase();
   
 //  Correct intensive inputs       
@@ -41,7 +43,7 @@ function getComputerChoice() {
         playerSelection !== "scissors"
       ) {
         playerSelection = prompt(
-          "Invalid choice. Please enter Rock, Paper, or Scissors"
+          "Invalid choice. Please enter rock, paper, or scissors"
         );
         playerSelection = playerSelection.toLowerCase();
       }
