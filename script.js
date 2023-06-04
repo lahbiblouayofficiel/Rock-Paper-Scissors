@@ -12,16 +12,31 @@ function getComputerChoice( ) {
   
 }
 
+let computerSelection = getComputerChoice();
+
 
 //  Test output console.log( getComputerChoice());
+
+// Get Player choice 'Rock', 'Paper', 'Scissors' :~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+let userInput = prompt("Enter your choice: Rock, Paper, or Scissors");
+
+while (!answer.includes(userInput)) {
+  userInput = prompt("Invalid choice. Please enter Rock, Paper, or Scissors: plz dont forget lower and UpperCase ");
+}
+
+
+
 
 
 
 // Function one round game : ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-let computerSelection = getComputerChoice();
-let playerSelection = "Paper" ;
+
+
  
 console.log('computerSelection: '+ computerSelection);
 
